@@ -1,0 +1,69 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:ma="urn:import:gwt.material.design.addins.client"  >
+	<ui:style>
+	.left_menu_title {
+   cursor: pointer;
+}
+.panel{
+   background: url("log.png");
+   background-size: 100%;
+   padding: 0px !important;
+   padding-top: 40% !important;
+ }
+ .fieldPanel{
+   background: white;
+   padding: 6%;
+ }
+ .imgProfile{
+   margin-top: -95px;
+   width:33%;
+   margin-left: 33%;
+   border: 5px solid #fff;
+ }
+ .rowAction{
+  margin-top: 20px;
+ }
+ .login_demo{
+   padding: 6% 10%;
+   background-repeat: no-repeat; 
+   background-position:0px s0px; 
+   background-color : #448484;
+    background-size:100% 100%;
+ }
+   .cssLabel{
+   color:black; 
+  }
+  .label{
+  color:black; 
+}
+  
+</ui:style>
+<g:HTMLPanel >
+ <m:MaterialCard  styleName="{style.login_demo}"  ui:field="Cardimg">
+ 	<m:MaterialCardImage waves="LIGHT">
+  	 <m:MaterialImage url="http://thatgrapejuice.net/wp-content/uploads/2013/08/pharrell-williams-that-grape-juice.png"/>
+  	 
+  	 </m:MaterialCardImage>
+  	 <m:MaterialCardContent layoutPosition="RELATIVE" paddingBottom="62">
+  	 <m:MaterialTextArea  label="Address :"  styleName="{style.cssLabel}"/>
+ 	 <m:MaterialTextBox  label="City :" styleName="{style.cssLabel}" /> 
+ 	<m:MaterialTextBox label="State :" styleName="{style.cssLabel}" length="10"/>
+ 	<m:MaterialTextBox  label="Country :" styleName="{style.cssLabel}" length="10"/>
+ 	<m:MaterialTextBox label="PinCode :" styleName="{style.cssLabel}" length="10"/>
+ 	<m:MaterialTextBox label="PhoneNO :" styleName="{style.cssLabel}" length="10"/>
+  	 <m:MaterialAnchorButton ui:field="btnFAB" type="FLOATING" iconType="ADD_SHOPPING_CART" size="LARGE" waves="DEFAULT" layoutPosition="ABSOLUTE" right="32" top="-32"/>
+
+ </m:MaterialCardContent>
+ <m:MaterialCardAction height="450px">
+ <m:MaterialLabel text="PusrchareID :"  styleName="{style.cssLabel}" fontSize="1.5em"/><m:MaterialLabel text="ProductID :"  styleName="{style.cssLabel}" fontSize="1.5em"/>
+ 
+    <m:MaterialTextBox  label="NAME OF PRODUCT :" length="10" styleName="{style.cssLabel}"/>
+ 	<m:MaterialTextArea  label="DETAILS :" length="10" resizeRule="FOCUS" styleName="{style.cssLabel}"/> 
+ 	<m:MaterialTextBox  label="COST :" length="10" styleName="{style.cssLabel}"/>
+  </m:MaterialCardAction>
+</m:MaterialCard>
+</g:HTMLPanel>
+</ui:UiBinder> 

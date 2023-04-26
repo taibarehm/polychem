@@ -1,0 +1,46 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:ma="urn:import:gwt.material.design.addins.client"  >
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	 .imgProfile{
+   margin-top: -60px;
+   width:33%;
+   margin-left: 33%;
+   border: 5px solid #fff;
+ }
+ 
+ .login_demo{
+   padding: 4%;
+ }
+	</ui:style>
+	<g:HTMLPanel ui:field="t">
+		<m:MaterialHeader layoutPosition="FIXED" width="100%" shadow="1" depth="996">
+	<m:MaterialNavBar backgroundColor="LIGHT_BLUE" activates="sidenavGplus">
+		<m:MaterialNavBrand paddingLeft="60" text="SPUR + PC" />
+			<m:MaterialNavSection float="RIGHT">
+			<m:MaterialLink iconType="APPS" />
+			<m:MaterialLink iconType="NOTIFICATIONS" text="ADMIN"  ui:field="ADMIN"/>
+		<m:MaterialImage circle="true" width="40px" height="40px" marginTop="12" marginRight="12" url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" backgroundColor="WHITE" />
+       </m:MaterialNavSection>
+     </m:MaterialNavBar>
+    <m:MaterialRow backgroundColor="LIGHT_BLUE" marginBottom="0">
+       <m:MaterialColumn offset="l3 m0 s0" grid="l6 m12 s12" backgroundColor="LIGHT_BLUE">
+             <m:MaterialTab ui:field="tab" backgroundColor="LIGHT_BLUE">
+            <m:MaterialTabItem><m:MaterialLink text="ABOUT US" textColor="WHITE" waves="DEFAULT"/></m:MaterialTabItem>
+            <m:MaterialTabItem><m:MaterialLink text="ABOUT PC" textColor="WHITE" waves="DEFAULT"/></m:MaterialTabItem>
+            <m:MaterialTabItem><m:MaterialLink text="CONTECT" textColor="WHITE" waves="DEFAULT" /></m:MaterialTabItem>
+       </m:MaterialTab>
+  </m:MaterialColumn>
+  </m:MaterialRow>
+</m:MaterialHeader>
+		<m:MaterialRow backgroundColor="RED" addStyleNames="{style.login_demo}"  grid="s8 m8 l6" offset="l3" >
+		<g:Button styleName="{style.imgProfile}" ui:field="button" >LET SHOP</g:Button>
+ 
+   </m:MaterialRow>
+	</g:HTMLPanel>
+</ui:UiBinder> 
